@@ -1,0 +1,77 @@
+cd CompArch15/HW1
+vlib work
+vmap work work
+# Model Technology ModelSim PE vmap 10.4a Lib Mapping Utility 2015.03 Apr  7 2015
+# vmap -modelsim_quiet work work 
+# Copying C:/Modeltech_pe_edu_10.4a/win32pe_edu/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/Modeltech_pe_edu_10.4a/win32pe_edu/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+do hw1.do
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 11:08:22 on Sep 14,2015
+# vlog -reportprogress 300 -work work hw1.v 
+# -- Compiling module hw1test
+# 
+# Top level modules:
+# 	hw1test
+# End time: 11:08:22 on Sep 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# //  ModelSim PE Student Edition 10.4a Apr  7 2015 
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# // NOT FOR CORPORATE OR PRODUCTION USE.
+# // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
+# // FOR HIGHER EDUCATION PURPOSES ONLY
+# //
+# vsim -gui 
+# Start time: 11:08:22 on Sep 14,2015
+# Loading work.hw1test
+# Hello, CompArch!
+do hw1.do
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 11:42:50 on Sep 14,2015
+# vlog -reportprogress 300 -work work hw1.v 
+# -- Compiling module hw1test
+# 
+# Top level modules:
+# 	hw1test
+# End time: 11:42:50 on Sep 14,2015, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 11:42:52 on Sep 14,2015
+# Loading work.hw1test
+# A B | ~A ~B | ~A~B 
+# 0 0 | 1 1 | 1 
+# 0 1 | 1 0 | 0 
+# 1 0 | 0 1 | 0 
+# 1 1 | 0 0 | 0 
+do hw1.do
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 12:05:18 on Sep 14,2015
+# vlog -reportprogress 300 -work work hw1.v 
+# -- Compiling module hw1test
+# 
+# Top level modules:
+# 	hw1test
+# End time: 12:05:19 on Sep 14,2015, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 12:05:21 on Sep 14,2015
+# Loading work.hw1test
+# A B | ~A ~B | ~(AB) ~A+~B | ~(A+B) ~A~B 
+# 0 0 | 1 1 | 1 1 | 1 1 
+# 0 1 | 1 0 | 1 1 | 0 0 
+# 1 0 | 0 1 | 1 1 | 0 0 
+# 1 1 | 0 0 | 0 0 | 0 0 
