@@ -45,22 +45,22 @@ wire out;
 structuralMultiplexer multiplexer (out, addr0,addr1, in0,in1,in2,in3); // Swap after testing
 
 initial begin
-$display("A0 A1| I0 I1 I2 I3 | O | Expected Output");
-addr0=1;addr1=1;in0=1'bX;in1=1'bX;in2=1'bX;in3=0; #1000 
-$display("%b  %b |  %b  %b  %b  %b | %b | 0", addr0, addr1, in0, in1, in2, in3, out);
-addr0=1;addr1=1;in0=1'bX;in1=1'bX;in2=1'bX;in3=1; #1000
-$display("%b  %b |  %b  %b  %b  %b | %b | 1", addr0, addr1, in0, in1, in2, in3, out);
-addr0=0;addr1=1;in0=1'bX;in1=1'bX;in2=0;in3=1'bX; #1000 
-$display("%b  %b |  %b  %b  %b  %b | %b | 0", addr0, addr1, in0, in1, in2, in3, out);
-addr0=0;addr1=1;in0=1'bX;in1=1'bX;in2=1;in3=1'bX; #1000 
-$display("%b  %b |  %b  %b  %b  %b | %b | 1", addr0, addr1, in0, in1, in2, in3, out);
-addr0=1;addr1=0;in0=1'bX;in1=0;in2=1'bX;in3=1'bX; #1000 
-$display("%b  %b |  %b  %b  %b  %b | %b | 0", addr0, addr1, in0, in1, in2, in3, out);
-addr0=1;addr1=0;in0=1'bX;in1=1;in2=1'bX;in3=1'bX; #1000 
-$display("%b  %b |  %b  %b  %b  %b | %b | 1", addr0, addr1, in0, in1, in2, in3, out);
+$display("A1 A0| I3 I2 I1 I0 | O | Expected Output");
 addr0=0;addr1=0;in0=0;in1=1'bX;in2=1'bX;in3=1'bX; #1000 
-$display("%b  %b |  %b  %b  %b  %b | %b | 0", addr0, addr1, in0, in1, in2, in3, out);
-addr0=0;addr1=0;in0=1;in1=1'bX;in2=1'bX;in3=1'bX; #1000 
-$display("%b  %b |  %b  %b  %b  %b | %b | 1", addr0, addr1, in0, in1, in2, in3, out);
+$display("%b  %b |  %b  %b  %b  %b | %b | 0", addr1, addr0, in3, in2, in1, in0, out);
+addr0=0;addr1=0;in0=1;in1=1'bX;in2=1'bX;in3=1'bX; #1000
+$display("%b  %b |  %b  %b  %b  %b | %b | 1", addr1, addr0, in3, in2, in1, in0, out);
+addr0=1;addr1=0;in0=1'bX;in1=0;in2=1'bX;in3=1'bX; #1000 
+$display("%b  %b |  %b  %b  %b  %b | %b | 0", addr1, addr0, in3, in2, in1, in0, out);
+addr0=1;addr1=0;in0=1'bX;in1=1;in2=1'bX;in3=1'bX; #1000 
+$display("%b  %b |  %b  %b  %b  %b | %b | 1", addr1, addr0, in3, in2, in1, in0, out);
+addr0=0;addr1=1;in0=1'bX;in1=1'bX;in2=0;in3=1'bX; #1000 
+$display("%b  %b |  %b  %b  %b  %b | %b | 0", addr1, addr0, in3, in2, in1, in0, out);
+addr0=0;addr1=1;in0=1'bX;in1=1'bX;in2=1;in3=1'bX; #1000 
+$display("%b  %b |  %b  %b  %b  %b | %b | 1", addr1, addr0, in3, in2, in1, in0, out);
+addr0=1;addr1=1;in0=1'bX;in1=1'bX;in2=1'bX;in3=0; #1000 
+$display("%b  %b |  %b  %b  %b  %b | %b | 0", addr1, addr0, in3, in2, in1, in0, out);
+addr0=1;addr1=1;in0=1'bX;in1=1'bX;in2=1'bX;in3=1; #1000 
+$display("%b  %b |  %b  %b  %b  %b | %b | 1", addr1, addr0, in3, in2, in1, in0, out);
 end
 endmodule
