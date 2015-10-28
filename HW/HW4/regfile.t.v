@@ -138,6 +138,65 @@ output reg		Clk
     $display("Test Case 2 Failed");
   end
 
+  // Test Case 3: 
+  //   Do not write '15' to register 2, verify with Read Ports 1 and 2
+  //   Tests if RegWrite works properly
+  WriteRegister = 5'd2;
+  WriteData = 32'd15;
+  RegWrite = 0;
+  ReadRegister1 = 5'd2;
+  ReadRegister2 = 5'd2;
+  #5 Clk=1; #5 Clk=0;
+
+  if((ReadData1 == 15) || (ReadData2 == 15)) begin
+    dutpassed = 0;
+    $display("Test Case 3 Failed");
+  end
+
+  // Test Case 4: 
+  //   Write '17' to register 4, verify with Read Port 1 and not on Port 2
+  //   Tests to ensure whether or not the correct register is written to
+  WriteRegister = 5'd4;
+  WriteData = 32'd17;
+  RegWrite = 1;
+  ReadRegister1 = 5'd4;
+  ReadRegister2 = 5'd2;
+  #5 Clk=1; #5 Clk=0;
+
+  if((ReadData1 != 17) || (ReadData2 == 17)) begin
+    dutpassed = 0;
+    $display("Test Case 4 Failed");
+  end
+
+  // Test Case 5: 
+  //   Write '17' to register 4, verify with Read Port 1 and not on Port 2
+  //   Tests if all registers are written to, rather than just one
+  WriteRegister = 5'd4;
+  WriteData = 32'd17;
+  RegWrite = 1;
+  ReadRegister1 = 5'd4;
+  ReadRegister2 = 5'd2;
+  #5 Clk=1; #5 Clk=0;
+
+  if((ReadData1 != 17) || (ReadData2 == 17)) begin
+    dutpassed = 0;
+    $display("Test Case 5 Failed");
+  end
+
+  // Test Case 5: 
+  //  Attempt to write '17' to register 0, verify zeros with Read Port 1 and Port 2
+  //  Tests if the Zero register is write protected
+  WriteRegister = 5'd0;
+  WriteData = 32'd17;
+  RegWrite = 1;
+  ReadRegister1 = 5'd0;
+  ReadRegister2 = 5'd0;
+  #5 Clk=1; #5 Clk=0;
+
+  if((ReadData1 != 0) || (ReadData2 != 0)) begin
+    dutpassed = 0;
+    $display("Test Case 5 Failed");
+  end
 
   // All done!  Wait a moment and signal test completion.
   #5
