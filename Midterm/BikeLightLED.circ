@@ -61,23 +61,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabelfont" val="SansSerif plain 12"/>
     <wire from="(380,430)" to="(440,430)"/>
     <wire from="(410,420)" to="(470,420)"/>
+    <wire from="(440,430)" to="(490,430)"/>
     <wire from="(460,380)" to="(510,380)"/>
     <wire from="(230,290)" to="(230,300)"/>
     <wire from="(490,330)" to="(490,340)"/>
-    <wire from="(110,360)" to="(410,360)"/>
-    <wire from="(110,330)" to="(280,330)"/>
-    <wire from="(110,330)" to="(110,360)"/>
-    <wire from="(570,340)" to="(590,340)"/>
-    <wire from="(570,320)" to="(590,320)"/>
-    <wire from="(640,330)" to="(660,330)"/>
-    <wire from="(110,290)" to="(110,330)"/>
-    <wire from="(350,300)" to="(370,300)"/>
-    <wire from="(490,340)" to="(510,340)"/>
-    <wire from="(490,400)" to="(510,400)"/>
-    <wire from="(90,360)" to="(110,360)"/>
-    <wire from="(460,400)" to="(470,400)"/>
-    <wire from="(500,320)" to="(510,320)"/>
-    <wire from="(440,430)" to="(490,430)"/>
     <wire from="(230,300)" to="(280,300)"/>
     <wire from="(380,290)" to="(500,290)"/>
     <wire from="(370,280)" to="(370,300)"/>
@@ -86,61 +73,74 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(440,410)" to="(440,430)"/>
     <wire from="(410,400)" to="(410,420)"/>
     <wire from="(470,400)" to="(470,420)"/>
+    <wire from="(110,360)" to="(410,360)"/>
+    <wire from="(110,330)" to="(280,330)"/>
     <wire from="(500,290)" to="(500,320)"/>
     <wire from="(490,400)" to="(490,430)"/>
     <wire from="(90,310)" to="(130,310)"/>
     <wire from="(380,290)" to="(380,320)"/>
     <wire from="(380,320)" to="(420,320)"/>
+    <wire from="(110,330)" to="(110,360)"/>
     <wire from="(380,340)" to="(380,430)"/>
     <wire from="(570,280)" to="(570,320)"/>
+    <wire from="(570,340)" to="(590,340)"/>
+    <wire from="(570,320)" to="(590,320)"/>
+    <wire from="(640,330)" to="(660,330)"/>
     <wire from="(460,330)" to="(490,330)"/>
     <wire from="(350,340)" to="(380,340)"/>
     <wire from="(350,320)" to="(380,320)"/>
     <wire from="(690,340)" to="(720,340)"/>
+    <wire from="(110,290)" to="(110,330)"/>
+    <wire from="(350,300)" to="(370,300)"/>
     <wire from="(560,330)" to="(590,330)"/>
+    <wire from="(490,340)" to="(510,340)"/>
+    <wire from="(490,400)" to="(510,400)"/>
+    <wire from="(90,360)" to="(110,360)"/>
     <wire from="(110,290)" to="(130,290)"/>
     <wire from="(410,380)" to="(420,380)"/>
     <wire from="(410,400)" to="(420,400)"/>
     <wire from="(410,340)" to="(420,340)"/>
+    <wire from="(460,400)" to="(470,400)"/>
+    <wire from="(500,320)" to="(510,320)"/>
     <wire from="(220,290)" to="(230,290)"/>
     <wire from="(570,340)" to="(570,390)"/>
     <wire from="(370,280)" to="(570,280)"/>
     <wire from="(560,390)" to="(570,390)"/>
+    <comp loc="(220,290)" name="InputConditioner">
+      <a name="label" val="Input Conditioner"/>
+    </comp>
+    <comp lib="4" loc="(460,380)" name="D Flip-Flop">
+      <a name="label" val="DFF"/>
+    </comp>
+    <comp loc="(460,330)" name="Looper">
+      <a name="label" val="1000-Loop Counter"/>
+    </comp>
     <comp lib="1" loc="(560,390)" name="AND Gate">
       <a name="label" val="And"/>
-    </comp>
-    <comp lib="1" loc="(560,330)" name="AND Gate">
-      <a name="label" val="And"/>
-    </comp>
-    <comp lib="5" loc="(90,310)" name="Button">
-      <a name="label" val="Btn"/>
-      <a name="labelloc" val="north"/>
     </comp>
     <comp lib="5" loc="(720,340)" name="LED">
       <a name="label" val="LED"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp loc="(350,320)" name="FiniteStateMAchine">
-      <a name="label" val="Finite State Machine"/>
-    </comp>
     <comp loc="(690,340)" name="LED_Driver">
       <a name="label" val="LED Driver"/>
     </comp>
-    <comp loc="(460,330)" name="Looper">
-      <a name="label" val="1000-Loop Counter"/>
-    </comp>
-    <comp loc="(220,290)" name="InputConditioner">
-      <a name="label" val="Input Conditioner"/>
+    <comp lib="1" loc="(560,330)" name="AND Gate">
+      <a name="label" val="And"/>
     </comp>
     <comp lib="1" loc="(640,330)" name="OR Gate">
       <a name="label" val="Or"/>
     </comp>
-    <comp lib="4" loc="(460,380)" name="D Flip-Flop">
-      <a name="label" val="DFF"/>
-    </comp>
     <comp lib="0" loc="(90,360)" name="Clock">
       <a name="label" val="Clk"/>
       <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="5" loc="(90,310)" name="Button">
+      <a name="label" val="Btn"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp loc="(350,320)" name="FiniteStateMAchine">
+      <a name="label" val="Finite State Machine"/>
     </comp>
   </circuit>
   <circuit name="Looper">
@@ -8561,1023 +8561,1023 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(1550,570)" to="(1570,570)"/>
     <wire from="(1590,1310)" to="(1680,1310)"/>
     <wire from="(1590,3870)" to="(1680,3870)"/>
-    <comp lib="4" loc="(1340,2150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,2310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,2710)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,3030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,2470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,2790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,1030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,1350)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,3430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,3670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,2550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,2710)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,1350)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,1270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,2470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,3590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,70)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,3110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,1830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,2070)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,2550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,2950)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,950)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,2230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,1270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,3430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,1590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,710)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,2950)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,1110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,3030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,1110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,3270)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,3270)" name="D Flip-Flop"/>
     <comp lib="4" loc="(1340,1030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,3270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,3350)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,2550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,3030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,3110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,3190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,3750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,2870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,1590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,1670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,3270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,1910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,3830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,3030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,3670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,1270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,2310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,3430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,3430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,1590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,2390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,3910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,3670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,1510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,3510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,3750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,2630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,3830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,70)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,1750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,3190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,1350)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,2230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,3750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,1350)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,2150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,950)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,1430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,3750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,3910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,1830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,2310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,2230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,2870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,3030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,2310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,3990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,1750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,1830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,2630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,2550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,3030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,1910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,1350)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,2630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,2630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,3270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,3910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,1990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,70)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,1190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,950)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,2230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,2550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,1350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,1590)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,2630)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,1510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,1910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,2710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,3910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,310)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,3190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,3350)" name="D Flip-Flop"/>
     <comp lib="0" loc="(60,120)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="En"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="4" loc="(1970,230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,1990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,2550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,2230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,1190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,2790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,3430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,1910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,3670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,70)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,2470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,1750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,2150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,1350)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,3030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,1270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,2710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,3430)" name="D Flip-Flop"/>
     <comp lib="4" loc="(550,950)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,1110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,3830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,950)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,2470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,3270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,1670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,3510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,3590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,3830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,710)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,3990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,1590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,2790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,1430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,1510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,2470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,2630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,3110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,3430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,2390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,3270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,2070)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,3190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,3350)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,1510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,2230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,2390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,2070)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,2230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,1590)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,3750)" name="D Flip-Flop"/>
     <comp lib="4" loc="(1700,1590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,2470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,3590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,3110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,1190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,3910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,1910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,2070)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,1670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,3350)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,1270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,3590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,2550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,2870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,3910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,2230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,1750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,1430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,950)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,2710)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,3990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,3110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,2950)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,1430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,3830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,2230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,3270)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,3430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,3990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,1270)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,1190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,3190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,2390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,1350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,3190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,3190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,2550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,1190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,3590)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,2310)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,3750)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,1190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,1510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,2550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,1110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,3910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,3110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,2390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,2790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,1670)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,3670)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,1990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,2950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,1910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,70)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,3350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,1270)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,2150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,3590)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,310)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,2070)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,2630)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,1270)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,2470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,2230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,310)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,1350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,3030)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,1910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,3430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,2470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,1270)" name="D Flip-Flop"/>
     <comp lib="4" loc="(280,1670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,1030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,950)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,3030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,1430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,2870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,2070)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,2150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,3830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,3350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,3190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,3750)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,2390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,1110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,3910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,2950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,3910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,2470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,3590)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,1670)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,1190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,1510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,3750)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,1990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,2230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,1830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,2790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,3430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,2950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,2150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,1190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,2550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,1190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,3270)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,1590)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,1830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,3990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,3510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,3030)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,2470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,1590)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,2470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,1350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,1750)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,1830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,1510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,1750)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,1270)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,1430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,310)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,1030)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,1830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,3270)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,1990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,2150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,1990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,3590)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,1270)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,1830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,3670)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,2630)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,310)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,3030)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,1590)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,3750)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,630)" name="D Flip-Flop"/>
+    <comp lib="1" loc="(180,90)" name="NOT Gate"/>
+    <comp lib="4" loc="(1700,3430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,2630)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,3350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,2390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,3110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,70)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,1590)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,3430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,2790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,1110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,3910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,2950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,3350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,3910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,2710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,2230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,1750)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,3190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,3110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,3510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,2790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,3750)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,1190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,1430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,2070)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,1110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,1990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,2710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,3590)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,1910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,3350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,1430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,3110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,1110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,70)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,1510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,1510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,3590)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,70)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,3830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,1110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,3990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,950)" name="D Flip-Flop"/>
     <comp lib="4" loc="(1880,1110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,3830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,1750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,1830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,3110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,1350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,2550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,1830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,3910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,70)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,2070)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,3750)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,1030)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,1350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,1590)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,1030)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,3110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,1750)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,1030)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,1510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,1510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,1270)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,3750)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,3830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,3910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,1910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,1030)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,3030)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,1270)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,3430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,1270)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,1910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,2550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,3270)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,2310)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,1510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,3110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,3270)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,3830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,1670)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,3350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,2230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,3510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,2630)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,2630)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,3030)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,1670)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,1110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,1350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,1750)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,1590)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,1110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,3750)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,1670)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,1430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,2390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,2310)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,3510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,2950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,1430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,2310)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,3670)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,3270)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,3350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,1350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,1670)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,3670)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,3750)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,1430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,1030)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,3030)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,3350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,3030)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,2710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,1110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,3510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,3750)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,1830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,3830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,1990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,2070)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,2390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,2310)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,70)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,2230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,1670)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,3670)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,1670)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,2550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,3350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,1430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,2230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,3510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,3190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,2070)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,310)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,630)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,3910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,2310)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,1350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,2790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,1030)" name="D Flip-Flop"/>
     <comp lib="0" loc="(60,170)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="Clk"/>
       <a name="labelloc" val="north"/>
     </comp>
+    <comp lib="4" loc="(460,70)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,2070)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,2470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,2150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,1910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,3990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,3830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,1990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,2230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,2550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,2630)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,310)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,1510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,230)" name="D Flip-Flop"/>
     <comp lib="4" loc="(460,2070)" name="D Flip-Flop"/>
     <comp lib="4" loc="(2060,1590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,1990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,2150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,2470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,70)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,1350)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,3430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,710)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,2790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,1830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,2630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,2470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,1270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,2550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,3110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,3670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,2470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,3110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,2790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,2390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,1590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,1910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,1430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,2390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,2390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,3510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,1990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,2630)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,3990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,1030)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,3910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,3430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,1190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,2630)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,1990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,2870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,3350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,2150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,2630)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,3670)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,70)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,3270)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,2950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,1830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,2150)" name="D Flip-Flop"/>
     <comp lib="4" loc="(1340,230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,3830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,1750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,3430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,2550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,3590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,3030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,1910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,2390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,1590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,1110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,3670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,1670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,1270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,1910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,3990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,2470)" name="D Flip-Flop"/>
     <comp lib="4" loc="(550,3750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,3190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,2310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,1910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,2470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,1510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,1270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,1110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,1270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,1510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,1190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,70)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,3350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,2870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,1350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,2630)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,1750)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,3350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,3510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,3030)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,3670)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,2150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,3430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,310)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,2630)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,2150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,1750)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,3510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,1510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,1350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,1670)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,3190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,1270)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,2950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,1030)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,2150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,2950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,1750)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,1350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,3430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,3590)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,2070)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,1510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,3110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,3030)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,2790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,1990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,1910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,2390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,2710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,70)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,3430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,3830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,3030)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,3510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,2310)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,2230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,1830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,1350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,2950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,1430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,1670)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,2550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,310)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,2550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,1190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,630)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,3910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,1670)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,3270)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,3670)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,1750)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,2710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,1590)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,1990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,3030)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,2150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,2630)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,1430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,3670)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,2390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,2470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,1350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,1110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,630)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,1910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,3190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,1110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,2230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,3590)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,310)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,3510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,1190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,1830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,310)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,1910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,2870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,2950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,1110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,630)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,3110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,2310)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,630)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,2870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,3910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,3430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,630)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,1590)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,310)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,3990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,3830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,2070)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,1430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,2150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,1990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,3190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,2390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,2630)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,1750)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,1910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,310)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,630)" name="D Flip-Flop"/>
     <comp lib="4" loc="(1700,3510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,1830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,2310)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,2710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,1910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,1830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,3030)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,3270)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,2550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,2710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,1270)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,2150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,1270)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,3510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,1270)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,630)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,2950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,1670)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,3990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,1350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,1030)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,630)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,1750)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,70)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,1430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,2070)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,70)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,2150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,3670)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,2790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,70)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,2390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,3750)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,2390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,1590)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,3430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,630)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,3990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,2870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,630)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,3590)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,1750)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,2310)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,630)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,3670)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,2310)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,3190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,3110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,2630)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,3190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,2150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,3590)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,2630)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,1990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,1030)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,3590)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,3910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,1110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,2310)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,3750)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,1430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,70)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,3830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,3190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,1590)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,2230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,1750)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,3510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,1830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,1350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,1350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,2390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,630)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,1110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,2870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,3670)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,2790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,3670)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,3990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,2470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,2230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,2870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,2710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,2790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,1430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,3110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,3590)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,2390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,1990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,3990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,1510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,2150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,1670)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,3590)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,1510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,3590)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,3110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,3190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,1430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,1190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,310)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,2870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,3910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,3750)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,2790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,3590)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,2310)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,3430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,1750)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,2870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,3030)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,3590)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,3990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,3270)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,2310)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,2230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,630)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,3270)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,1510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,3910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,1190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,3750)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,2550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,1830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,2710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,3670)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,3990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,310)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,2950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,2230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,3350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,1990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,1430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,1910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,1350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,3110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,1590)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,2550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,630)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,3190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,1990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,1590)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,2150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,2070)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,3750)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,3670)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,3990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,2630)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,2870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,2470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,2470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,2390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,3430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,1510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,3110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,1670)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,3830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,2550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,1030)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,1910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,1910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,1670)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,2470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,3510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,2550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,3110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,2550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,2790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,3430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,1590)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,2710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,3110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,2870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,1750)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,1590)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,3590)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,2470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,1510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,2870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,1910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,3030)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,70)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,1830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,2070)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,1910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,3830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,1830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,3270)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,2950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,2230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,3910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,3030)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,1670)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,2470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,2390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,1350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,2150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,3110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,2630)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,2710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,3590)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,1190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,2070)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,3750)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,2470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,2070)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,1350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,2070)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,3350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,2870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,2870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,1750)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,2790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,2710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,2470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,2870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,1270)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,2470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,3350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,3990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,3350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,1750)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,2710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,3830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,2470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,3270)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,3270)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,2870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,1510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,2070)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,70)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,3830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,1030)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,1190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,2790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,3910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,3910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,2390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,310)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,1030)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,2790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,2790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,2790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,2790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,1190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,3670)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,630)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,70)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,1590)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,2710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,3190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,2950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,2310)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,2550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,2710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,3110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,2710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,3510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,1270)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,3830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,1750)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,2070)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,2230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,3350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,3510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,70)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,1830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,2710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,2870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,2390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,2870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,1190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,2950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,2070)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,3510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,2310)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,1190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,1990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,2950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,1110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,3190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,3270)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,1190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,3990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,2630)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,3190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,3030)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,2870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,3430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,2310)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,2790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,2950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,3910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,3830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,630)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,2950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,3510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,1270)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,1270)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,1910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,2550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,2630)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,3590)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,2550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,1190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,630)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,2950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,3670)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,3110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,1750)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,2790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,1910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,2070)" name="D Flip-Flop"/>
     <comp lib="0" loc="(2180,40)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="label" val="Q"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="4" loc="(1790,470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,2150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,2230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,3910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,1590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,3910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,70)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,2710)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,1270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,1110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,3830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,1350)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,1910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,3830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,3750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,3430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,3910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,1270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,710)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,1190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,3830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,1430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,950)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,2630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,1110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,1670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,950)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,710)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,1990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,2310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,3750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,1910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,2950)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,2070)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,2950)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,3350)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,3590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,70)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,3670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,3750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,1030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,1910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,1270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,2310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,3510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,3350)" name="D Flip-Flop"/>
-    <comp lib="1" loc="(180,90)" name="NOT Gate"/>
-    <comp lib="4" loc="(820,3350)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,1350)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,710)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,3750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,3590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,950)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,3990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,1910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,2630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,2630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,2950)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,3830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,3270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,3830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,1910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,2710)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,3110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,2310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,70)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,3270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,3910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,2630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,2870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,1990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,1110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,2950)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,2390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,2150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,1030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,1750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,3270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,3030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,1830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,2230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,70)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,3030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,1030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,2630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,2710)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,3830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,2710)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,3670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,2630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,1750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,1510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,2390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,950)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,3430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,3510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,710)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,2070)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,2470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,2070)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,1670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,3190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,1830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,3270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,2870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,1670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,3830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,1190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,3750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,710)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,1510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,3270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,3990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,2470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,710)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,1830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,3190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,710)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,3990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,1350)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,2230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,3270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,1510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,3190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,710)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,2310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,1110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,2950)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,2150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,1190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,2150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,2150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,3750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,1110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,1590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,3830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,2230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,3190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,1590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,1030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,3110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,2150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,2790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,3750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,3590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,2790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,1430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,2550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,1830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,2310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,2710)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,950)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,1110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,1350)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,950)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,2390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,1030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,3430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,1590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,3270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,950)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,2870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,2550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,2630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,3990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,1830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,1830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,2470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,2950)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,2550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,710)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,2870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,3350)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,3510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,2310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,2390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,2230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,2390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,3430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,3430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,3590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,3430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,2310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,3190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,3590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,1030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,1110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,3830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,2710)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,2870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,1190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,2390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,1510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,1990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,3270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,3350)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,2070)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,3750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,1910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,1670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,1190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,2150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,3110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,2950)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,1670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,2150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,3590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,1590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,2870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,3110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,3910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,2390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,2870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,3270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,3190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,3430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,2710)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,2870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,1750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,1830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,1350)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,70)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,1670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,1110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,2710)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,1030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,1510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,3110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,950)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,2790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,1590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,3270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,2710)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,1510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,3510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,1750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,1830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,1270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,3670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,1990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,1990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,2710)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,2070)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,2870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,2230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,3030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,3030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,950)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,1110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,1990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,1270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,2470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,3190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,1830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,2790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,1430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,1590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,2550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,1350)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,1750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,70)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,70)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,2070)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,1190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,1750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,1830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,1590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,1510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,1030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,3910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,3510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,3190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,3350)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,3430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,2390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,3670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,2070)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,2070)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,3510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,1670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,2550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,2310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,2390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,710)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,2790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,3750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,2230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,1190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,1590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,3910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,3830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,2870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,3350)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,1590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,3350)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,3510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,2070)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,3190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,3270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,3270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,710)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,3830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,3510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,2470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,3670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,1030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,2950)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,2150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,1030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,2550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,3030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,2790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,2630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,3190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,1030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,2550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,1110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,3190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,3750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,1990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,3350)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,1990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,70)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,310)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,310)" name="D Flip-Flop"/>
     <comp lib="4" loc="(1000,3030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,3910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,2630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,3590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,1030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,1990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,2310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,2550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,2070)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,1510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,1990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,1190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,2790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,3350)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,1670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,1110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,2310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,70)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,2630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,3910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,1990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,2710)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,3030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,3270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,2230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,3830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,3110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,3350)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,3750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,1910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,3910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,1750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,2390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,70)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,3030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,1670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,1350)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,3510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,3350)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,3190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,3270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,3590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,2870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,1990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,1990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,1990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,70)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,3590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,3670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,3990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,3670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,3270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,3510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,2950)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,2310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,3030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,2070)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,1510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,3190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,1510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,3510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,2710)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,2230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,3430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,3110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,1670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,3670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,1030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,1990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,2950)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,3030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,2630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,1350)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,3670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,2070)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,1750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,1510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,3350)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,3590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,3590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,2390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,2630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,1270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,3590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,1910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,3670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,70)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,3670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,1430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,2310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,2150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,3350)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,2950)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,710)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,2470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,3750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,2790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,3190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,1750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,2070)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,1430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,2950)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,1350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,1830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,1110)" name="D Flip-Flop"/>
     <comp lib="4" loc="(2060,310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,1190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,1590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,1830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,2790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,3750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,710)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,1990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,1190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,2550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,3590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,3910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,1030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,2150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,1270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,3510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,1430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,1270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,1910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,1350)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,2150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,1910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,1750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,1430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,2310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,2710)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,1350)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,3990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,1510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,3670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,950)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,3510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,3910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,3110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,1430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,2870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,3350)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,1670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,1110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,1750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,3750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,3910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,2150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,1510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,2630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,1350)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,1110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,3110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,3670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,1270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,2710)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,3590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,2070)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,3350)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,1750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,2950)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,950)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,3510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,2150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,1270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,2310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,70)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,1030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,2870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,3990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,2870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,3510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,3430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,1430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,2470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,1110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,1510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,2230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,3030)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,1990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,630)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,3030)" name="D Flip-Flop"/>
     <comp lib="4" loc="(280,3990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,710)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,3590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,1670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,3110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,1190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,1430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,3110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,1430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,3990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,1590)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,3990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,2790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,2870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,1750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,3910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,1430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,1990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,1910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,1190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,3190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,2950)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,3990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,1270)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,2390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,3510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,710)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,3990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,3430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,1750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,3990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,2470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,1830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,1510)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,1190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,1190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(640,790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,3990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,70)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,3430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,2470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,1430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1000,2790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,1910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,3990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,1190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,1830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,2230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,2870)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,710)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(820,3830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,1190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,3750)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,2790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,1670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,2310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1970,1030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,1830)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,2710)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,3990)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,3670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,3190)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(370,2950)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,1670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(2060,2950)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1340,3110)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,2150)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,310)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1430,2550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,3350)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1610,2790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(280,950)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1880,710)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(910,2790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,1830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,3590)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,1510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,1350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,2150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,2710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,2150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,1670)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,70)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,3670)" name="D Flip-Flop"/>
     <comp lib="4" loc="(1610,2710)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,3510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,1670)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,3030)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,3750)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,3750)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,3110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1970,1510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,2230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,2950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,1190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,2470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,3830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,1430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,1670)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,3990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,1750)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,70)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,3350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,3430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,2870)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,2550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,2390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,2310)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,1990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,3270)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,1990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,3830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,3270)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,1110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,1030)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1790,3190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,3910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,3990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,3830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,1430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,1110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,2390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,2150)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,1430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,1270)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(910,2310)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,2230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,3430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,3830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,3990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,2070)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,2230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,3670)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(640,3270)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,3030)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,3990)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,1590)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(280,1430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,550)" name="D Flip-Flop"/>
     <comp lib="4" loc="(2060,1030)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1790,2230)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(460,2790)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1090,2470)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,1430)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1520,1670)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,2550)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1250,3910)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(730,2630)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(1700,2390)" name="D Flip-Flop"/>
-    <comp lib="4" loc="(550,2950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(460,1110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,3110)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,950)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,1030)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(370,1830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,3190)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,2390)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1090,3430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1250,3670)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,2790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1520,2310)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(550,1030)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,3510)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1700,70)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,2470)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1430,1910)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,310)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1340,2550)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(820,1430)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,1830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,790)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(2060,1270)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(730,3350)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1610,2230)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1880,3830)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,1030)" name="D Flip-Flop"/>
+    <comp lib="4" loc="(1000,1270)" name="D Flip-Flop"/>
   </circuit>
   <circuit name="FiniteStateMAchine">
     <a name="circuit" val="FiniteStateMAchine"/>
@@ -9602,15 +9602,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(390,30)" to="(580,30)"/>
     <wire from="(70,60)" to="(70,130)"/>
     <wire from="(550,120)" to="(590,120)"/>
-    <wire from="(260,780)" to="(260,800)"/>
     <wire from="(330,440)" to="(330,520)"/>
     <wire from="(90,30)" to="(260,30)"/>
     <wire from="(140,110)" to="(180,110)"/>
-    <wire from="(250,380)" to="(290,380)"/>
-    <wire from="(250,260)" to="(290,260)"/>
-    <wire from="(250,140)" to="(290,140)"/>
-    <wire from="(250,500)" to="(290,500)"/>
-    <wire from="(370,780)" to="(410,780)"/>
     <wire from="(330,320)" to="(330,410)"/>
     <wire from="(330,200)" to="(330,290)"/>
     <wire from="(330,80)" to="(330,170)"/>
@@ -9645,7 +9639,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(370,230)" to="(410,230)"/>
     <wire from="(370,110)" to="(410,110)"/>
     <wire from="(40,170)" to="(330,170)"/>
-    <wire from="(260,760)" to="(490,760)"/>
     <wire from="(580,30)" to="(580,70)"/>
     <wire from="(20,90)" to="(50,90)"/>
     <wire from="(330,440)" to="(360,440)"/>
@@ -9662,16 +9655,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(160,280)" to="(470,280)"/>
     <wire from="(160,40)" to="(470,40)"/>
     <wire from="(160,400)" to="(470,400)"/>
-    <wire from="(440,780)" to="(490,780)"/>
-    <wire from="(280,780)" to="(330,780)"/>
-    <wire from="(540,770)" to="(580,770)"/>
-    <wire from="(260,760)" to="(260,780)"/>
     <wire from="(380,20)" to="(550,20)"/>
     <wire from="(10,80)" to="(50,80)"/>
-    <wire from="(290,350)" to="(290,380)"/>
-    <wire from="(290,230)" to="(290,260)"/>
-    <wire from="(290,110)" to="(290,140)"/>
-    <wire from="(290,470)" to="(290,500)"/>
     <wire from="(230,340)" to="(270,340)"/>
     <wire from="(230,220)" to="(270,220)"/>
     <wire from="(230,100)" to="(270,100)"/>
@@ -9695,7 +9680,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(310,440)" to="(330,440)"/>
     <wire from="(390,200)" to="(410,200)"/>
     <wire from="(50,60)" to="(70,60)"/>
-    <wire from="(280,780)" to="(280,820)"/>
     <wire from="(70,130)" to="(410,130)"/>
     <wire from="(70,250)" to="(410,250)"/>
     <wire from="(70,490)" to="(410,490)"/>
@@ -9714,10 +9698,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(260,440)" to="(270,440)"/>
     <wire from="(30,110)" to="(30,290)"/>
     <wire from="(260,80)" to="(270,80)"/>
-    <wire from="(110,140)" to="(250,140)"/>
-    <wire from="(250,260)" to="(250,380)"/>
-    <wire from="(250,140)" to="(250,260)"/>
-    <wire from="(250,380)" to="(250,500)"/>
     <wire from="(520,170)" to="(590,170)"/>
     <wire from="(150,150)" to="(470,150)"/>
     <wire from="(150,270)" to="(470,270)"/>
@@ -9728,9 +9708,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(370,200)" to="(370,230)"/>
     <wire from="(370,320)" to="(370,350)"/>
     <wire from="(370,80)" to="(370,110)"/>
-    <wire from="(250,820)" to="(280,820)"/>
     <wire from="(520,10)" to="(520,170)"/>
-    <wire from="(240,780)" to="(260,780)"/>
     <wire from="(360,10)" to="(360,440)"/>
     <wire from="(370,320)" to="(380,320)"/>
     <wire from="(120,180)" to="(120,300)"/>
@@ -9742,59 +9720,52 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(260,80)" to="(260,200)"/>
     <wire from="(260,200)" to="(260,320)"/>
     <wire from="(260,320)" to="(260,440)"/>
-    <wire from="(260,800)" to="(330,800)"/>
-    <comp lib="0" loc="(90,30)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="Clock"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="0" loc="(50,60)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="Btn"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="1" loc="(460,240)" name="AND Gate"/>
-    <comp lib="0" loc="(110,140)" name="Constant"/>
-    <comp lib="1" loc="(460,480)" name="AND Gate"/>
-    <comp lib="0" loc="(250,820)" name="Clock"/>
-    <comp lib="1" loc="(460,70)" name="AND Gate"/>
-    <comp lib="5" loc="(240,780)" name="Button"/>
-    <comp lib="1" loc="(120,60)" name="NOT Gate"/>
-    <comp lib="1" loc="(460,310)" name="AND Gate"/>
-    <comp lib="4" loc="(310,320)" name="D Flip-Flop"/>
-    <comp lib="1" loc="(460,360)" name="AND Gate"/>
-    <comp lib="1" loc="(460,190)" name="AND Gate"/>
-    <comp lib="1" loc="(460,120)" name="AND Gate"/>
-    <comp lib="4" loc="(310,200)" name="D Flip-Flop"/>
-    <comp lib="1" loc="(230,100)" name="OR Gate"/>
-    <comp lib="4" loc="(370,780)" name="D Flip-Flop"/>
     <comp lib="1" loc="(230,220)" name="OR Gate"/>
-    <comp lib="1" loc="(460,430)" name="AND Gate"/>
+    <comp lib="1" loc="(460,480)" name="AND Gate"/>
+    <comp lib="1" loc="(230,460)" name="OR Gate"/>
     <comp lib="0" loc="(590,170)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="label" val="Dim"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="1" loc="(110,100)" name="NOR Gate"/>
-    <comp lib="1" loc="(440,780)" name="NOT Gate"/>
+    <comp lib="4" loc="(310,80)" name="D Flip-Flop"/>
+    <comp lib="1" loc="(460,240)" name="AND Gate"/>
+    <comp lib="1" loc="(120,60)" name="NOT Gate"/>
+    <comp lib="4" loc="(310,200)" name="D Flip-Flop"/>
+    <comp lib="1" loc="(460,310)" name="AND Gate"/>
     <comp lib="0" loc="(590,70)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="label" val="On"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="1" loc="(230,460)" name="OR Gate"/>
     <comp lib="0" loc="(590,120)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="label" val="Blnk"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="1" loc="(540,770)" name="AND Gate"/>
-    <comp lib="4" loc="(310,80)" name="D Flip-Flop"/>
+    <comp lib="1" loc="(460,70)" name="AND Gate"/>
+    <comp lib="1" loc="(230,100)" name="OR Gate"/>
+    <comp lib="0" loc="(90,30)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Clock"/>
+      <a name="labelloc" val="north"/>
+    </comp>
     <comp lib="4" loc="(310,440)" name="D Flip-Flop"/>
+    <comp lib="1" loc="(460,430)" name="AND Gate"/>
+    <comp lib="1" loc="(110,100)" name="NOR Gate"/>
     <comp lib="1" loc="(230,340)" name="OR Gate"/>
+    <comp lib="1" loc="(460,360)" name="AND Gate"/>
+    <comp lib="1" loc="(460,120)" name="AND Gate"/>
+    <comp lib="0" loc="(50,60)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Btn"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="4" loc="(310,320)" name="D Flip-Flop"/>
+    <comp lib="1" loc="(460,190)" name="AND Gate"/>
   </circuit>
   <circuit name="InputConditioner">
     <a name="circuit" val="InputConditioner"/>
@@ -9821,25 +9792,25 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(80,70)" to="(80,110)"/>
     <wire from="(80,110)" to="(100,110)"/>
     <wire from="(200,90)" to="(220,90)"/>
+    <comp lib="1" loc="(200,90)" name="NOT Gate"/>
+    <comp lib="4" loc="(140,90)" name="D Flip-Flop"/>
+    <comp lib="0" loc="(60,90)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Clk"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="0" loc="(60,130)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Btn"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="1" loc="(270,80)" name="AND Gate"/>
     <comp lib="0" loc="(350,80)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="label" val="CndBtn"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="1" loc="(270,80)" name="AND Gate"/>
-    <comp lib="0" loc="(60,90)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="Clk"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="4" loc="(140,90)" name="D Flip-Flop"/>
-    <comp lib="0" loc="(60,130)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="Btn"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="1" loc="(200,90)" name="NOT Gate"/>
   </circuit>
   <circuit name="LED_Driver">
     <a name="circuit" val="LED_Driver"/>
@@ -9850,38 +9821,37 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <rect fill="none" height="25" stroke="#000000" stroke-width="2" width="30" x="50" y="60"/>
       <text font-family="SansSerif" font-size="10" text-anchor="middle" x="64" y="73">Enb</text>
       <text font-family="SansSerif" font-size="10" text-anchor="middle" x="64" y="83">LED</text>
-      <circ-port height="8" pin="30,90" width="8" x="46" y="66"/>
+      <circ-port height="8" pin="50,90" width="8" x="46" y="66"/>
       <circ-port height="10" pin="250,150" width="10" x="75" y="75"/>
       <circ-anchor facing="east" height="6" width="6" x="77" y="77"/>
     </appear>
     <wire from="(220,150)" to="(250,150)"/>
+    <wire from="(50,90)" to="(80,90)"/>
+    <wire from="(110,90)" to="(150,90)"/>
     <wire from="(220,110)" to="(220,150)"/>
-    <wire from="(30,90)" to="(50,90)"/>
     <wire from="(220,40)" to="(220,70)"/>
-    <wire from="(80,90)" to="(100,90)"/>
     <wire from="(180,90)" to="(200,90)"/>
-    <wire from="(130,90)" to="(150,90)"/>
+    <comp lib="0" loc="(220,40)" name="Power"/>
+    <comp lib="1" loc="(180,90)" name="NOT Gate">
+      <a name="label" val="Inv10"/>
+    </comp>
+    <comp lib="0" loc="(50,90)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="Enb"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="1" loc="(110,90)" name="NOT Gate">
+      <a name="label" val="Inv1"/>
+    </comp>
     <comp lib="0" loc="(250,150)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="label" val="LED"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="0" loc="(220,40)" name="Power"/>
-    <comp lib="1" loc="(130,90)" name="NOT Gate"/>
     <comp lib="0" loc="(220,110)" name="Transistor">
+      <a name="type" val="n"/>
       <a name="facing" val="south"/>
-    </comp>
-    <comp lib="1" loc="(180,90)" name="NOT Gate">
-      <a name="label" val="Inv10"/>
-    </comp>
-    <comp lib="0" loc="(30,90)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="Enb"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="1" loc="(80,90)" name="NOT Gate">
-      <a name="label" val="Inv1"/>
     </comp>
   </circuit>
 </project>
